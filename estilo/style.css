@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("https://images.unsplash.com/photo-1483354483454-4cd359948304?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    border: 2px solid rgba(82, 70, 70, 0.39);
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.input-login {
+    position: relative;
+    width: 350px;
+}
+
+.label-login {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px 40px 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.label-login::placeholder {
+    color: #555;
+}
+
+.img-user {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.manter-conectado {
+    position: relative;
+    right: 90px;
+    margin-top: 10px;
+}
+
+.links .senha{
+    position: relative;
+    bottom: 40px;
+    left: 110px;
+    width: 220px;
+}
+
+
+.links{
+    position: relative;
+}
+
+.enviar {
+    position: relative;
+    bottom: 20px;
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enviar:hover {
+    background: black;
+}
