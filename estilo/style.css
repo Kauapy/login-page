@@ -120,3 +120,36 @@ a:hover {
 .enviar:hover {
     background: black;
 }
+
+
+input[type="checkbox"] {
+    appearance: none; /* Remove o estilo padrão */
+    width: 16px;
+    height: 16px;
+    border: 2px solid black; /* Borda na cor desejada */
+    border-radius: 4px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: black; /* Cor quando marcado */
+    border-color: black;
+  }
+  
+  input[type="checkbox"]::before {
+    content: '✔';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%); /* Ajuste fino da posição */
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    display: block;
+  }
+  
