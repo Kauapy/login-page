@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilo/style.css" />
+    <title>Página de Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="" class="login-form">
+        <label for="usuario"></label>
+        <div class="input-login">
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="Usuário"
+            class="label-login"
+            required
+          />
+          <img src="/img/user-solid-24.png" ; class="img-user" />
+        </div>
+        <span class="erroSimbolo hidden"></span>
+
+        <label for="senha"></label>
+        <div class="input-login">
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Senha"
+            class="label-login"
+            required
+          />
+          <img
+            src="/img/lock-alt-solid-24.png"
+            class="img-user"
+            id="toggleSenha"
+            style="cursor: pointer";
+          />
+        </div>
+
+        <label for="manter-conectado" class="manter-conectado">
+          <input
+            type="checkbox"
+            name="manter-conectado"
+            id="manter-conectado"
+          />
+          Manter conectado
+        </label>
+
+        <div class="links">
+          <a href="#" class="senha">Esqueceu a senha?</a>
+        </div>
+
+        <input type="submit" value="Enviar" class="enviar" />
+        <p class="paragrafo">
+          Não tem uma conta? <a href="index02.html">Registre</a>
+        </p>
+      </form>
+    </div>
+    <script src="script/revelarSenha.js"></script>
+    <script src="script/bloqueadorDigitacao.js"></script>
+  </body>
+</html>

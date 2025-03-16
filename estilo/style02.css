@@ -84,28 +84,12 @@ a:hover {
     height: 20px;
 }
 
-.manter-conectado {
-    position: relative;
-    right: 90px;
-    margin-top: 10px;
-
-}
-
-.links .senha{
-    position: relative;
-    bottom: 40px;
-    left: 110px;
-    width: 220px;
-}
 
 
-.links{
-    position: relative;
-}
 
 .enviar {
     position: relative;
-    bottom: 20px;
+    top: 40px;
     width: 80%;
     height: 40px;
     border-radius: 15px;
@@ -154,11 +138,3 @@ input[type="checkbox"] {
     display: block;
   }
   
-
-  .erroSimbolo{
-
-  }
-
-  .hidden{
-    display: none;
-  }
